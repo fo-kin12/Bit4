@@ -1,0 +1,101 @@
+:root {
+  --azul-oscuro: #14235e;
+  --morado: #5b3fa8;
+  --cian: #1ea7ff;
+  --texto-gris: #b8c0e0;
+}
+
+body {
+  background-color: #0f1a4d;
+  font-family: 'Inter', sans-serif;
+}
+
+/* tarjeta grande */
+.preventa {
+  background: linear-gradient(135deg, var(--azul-oscuro), var(--morado));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  color: white;
+}
+
+.etiqueta {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--texto-gris);
+}
+
+.titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 10px 0 20px 0;
+}
+
+.descripcion {
+  color: var(--texto-gris);
+  font-size: 14px;
+  max-width: 420px;
+}
+
+/* contador */
+.contador {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.caja-tiempo {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  width: 60px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.numero {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  display: block;
+}
+
+.unidad {
+  font-size: 9px;
+  color: var(--texto-gris);
+}
+
+/* boton reserva */
+.boton-reservar {
+  background-color: var(--cian);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.boton-reservar:hover {
+  background-color: #0d8be0;
+}
+
+/* vinilo*/
+.disco {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%; /* para que sea circular y no el vinilo cuadrado */
+  background:
+    repeating-radial-gradient(circle, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 2px, transparent 2px, transparent 6px),
+    url("Rthriller.jpg") center / cover no-repeat;
+  position: relative;
+  transform-origin: center;
+  animation: girar 6s linear infinite; /* entre mas bajo sea el mumero mas rapido gira*/
+}
+
+/* animacion */
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

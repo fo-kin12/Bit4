@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <title>BIT4 - Catalogo</title>
+
+  <style>
+    :root {
+      --bg-primary: #060b1e;
+      --bg-card: #0e1738;
+      --text-main: #ffffff;
+      --text-muted: #8a99ad;
+      --accent-cyan: #00d2ff;
+      --accent-purple: #7b2cbf;
+      --btn-gradient: linear-gradient(135deg, #ff2a6d 0%, #ffa053 100%);
+      --active-gradient: linear-gradient(135deg, #7b2cbf 0%, #00d2ff 100%);
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+    }
+
+    .navbar-custom {
+      background-color: rgba(6, 11, 30, 0.95);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-active-pill {
+      background: var(--active-gradient);
+      color: var(--text-main) !important;
+      border: none;
+    }
+
+    .btn-cyan {
+      background-color: var(--accent-cyan);
+      color: #000;
+      font-weight: 600;
+    }
+
+    .card-vinyl {
+      background-color: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .search-input {
+      background-color: var(--bg-card);
+      border-color: rgba(255, 255, 255, 0.1);
+      color: var(--text-main);
+    }
+
+    .search-input:focus {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+      border-color: var(--accent-cyan);
+      box-shadow: none;
+    }
+
+    .filter-btn {
+      background-color: var(--bg-card);
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--active-gradient);
+      color: var(--text-main);
+      border-color: transparent;
+    }
+
+    .btn-buy {
+      background: var(--active-gradient);
+      color: var(--text-main);
+      border: none;
+      font-weight: 600;
+    }
+
+    .btn-buy:hover {
+      opacity: 0.9;
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold text-white" href="#">
+        <i class="bi bi-disc me-2 fs-4" style="color: var(--accent-cyan);"></i> BIT4
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link text-secondary" href="#">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link active px-3 btn-active-pill rounded-pill" href="#">CATALOGO</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#">EDICIONES LIMITADAS</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#">PREVENTAS</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#">NOSOTROS</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-white"><i class="bi bi-search fs-5"></i></a>
+          <a href="#" class="text-white position-relative">
+            <i class="bi bi-cart fs-5"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background-color: var(--accent-cyan); color: #000;">2</span>
+          </a>
+          <a href="#" class="btn btn-cyan rounded-pill btn-sm px-3 ms-2">INGRESAR</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5">
+    <div class="container">
+      <p class="fw-bold text-uppercase mb-1" style="color: var(--accent-cyan); letter-spacing: 2px; font-size: 0.85rem;">Vinilos que inspiran</p>
+      <h1 class="display-3 fw-bold mb-3">NUESTRO<br>CATALOGO</h1>
+      <p class="lead col-md-6" style="color: var(--text-muted);">
+        Descubre nuestra coleccion de vinilos, desde clasicos atemporales hasta ediciones especiales.
+      </p>
+    </div>
+  </header>
+
+  <section class="mb-5">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <div class="input-group">
+            <span class="input-group-text search-input border-end-0 text-muted"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control search-input border-start-0" placeholder="Buscar vinilos...">
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-wrap gap-2 justify-content-md-end">
+          <button class="btn filter-btn active rounded-pill px-4">Todos</button>
+          <button class="btn filter-btn rounded-pill px-3">Clasicos</button>
+          <button class="btn filter-btn rounded-pill px-3">Rock</button>
+          <button class="btn filter-btn rounded-pill px-3">Jazz</button>
+          <button class="btn filter-btn rounded-pill px-3">Electronica</button>
+          <a href="../Bit4/index.html" class="btn filter-btn rounded-pill px-3">Ediciones Especiales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="pb-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card card-vinyl h-100 rounded-3 text-white">
+            <div class="row g-0 h-100">
+              <div class="col-4">
+                <img src="./imagenes/Michael_Jackson.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="Michael_Jackson">
+              </div>
+              <div class="col-8">
+                <div class="card-body d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <h5 class="card-title fw-bold mb-0">Thriller</h5>
+                    <h6 class="fw-normal mb-2" style="color: var(--text-muted);">Michael Jackson</h6>
+                    <p class="card-text small" style="color: var(--text-muted);">Un clasico eterno en formato vinilo.</p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="fs-5 fw-bold">$ 120.000</span>
+                    <button class="btn btn-buy rounded-pill px-3 py-1 btn-sm">
+                      <i class="bi bi-cart-fill me-1"></i> Comprar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card card-vinyl h-100 rounded-3 text-white">
+            <div class="row g-0 h-100">
+              <div class="col-4">
+                <img src="./imagenes/Back_in_Black.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="ACDC">
+              </div>
+              <div class="col-8">
+                <div class="card-body d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <h5 class="card-title fw-bold mb-0">Back In Black</h5>
+                    <h6 class="fw-normal mb-2" style="color: var(--text-muted);">AC DC</h6>
+                    <p class="card-text small" style="color: var(--text-muted);">El album que marco generaciones.</p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="fs-5 fw-bold">$ 110.000</span>
+                    <button class="btn btn-buy rounded-pill px-3 py-1 btn-sm">
+                      <i class="bi bi-cart-fill me-1"></i> Comprar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card card-vinyl h-100 rounded-3 text-white">
+            <div class="row g-0 h-100">
+              <div class="col-4">
+                <img src="./imagenes/dark.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Dark Side of the Moon">
+              </div>
+              <div class="col-8">
+                <div class="card-body d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <h5 class="card-title fw-bold mb-0">Pink Floyd</h5>
+                    <h6 class="fw-normal mb-2" style="color: var(--text-muted);">The Dark Side of the Moon</h6>
+                    <p class="card-text small" style="color: var(--text-muted);">Una obra maestra de la musica.</p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="fs-5 fw-bold">$ 135.000</span>
+                    <button class="btn btn-buy rounded-pill px-3 py-1 btn-sm">
+                      <i class="bi bi-cart-fill me-1"></i> Comprar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card card-vinyl h-100 rounded-3 text-white">
+            <div class="row g-0 h-100">
+              <div class="col-4">
+                <img src="./imagenes/eagles.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Eagles">
+              </div>
+              <div class="col-8">
+                <div class="card-body d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <h5 class="card-title fw-bold mb-0">Their Greatest Hits (1971–1975)</h5>
+                    <h6 class="fw-normal mb-2" style="color: var(--text-muted);">Eagles</h6>
+                    <p class="card-text small" style="color: var(--text-muted);">Innovacion y experimentacion.</p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="fs-5 fw-bold">$ 140.000</span>
+                    <button class="btn btn-buy rounded-pill px-3 py-1 btn-sm">
+                      <i class="bi bi-cart-fill me-1"></i> Comprar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 small" style="border-top: 1px solid rgba(255, 255, 255, 0.05); color: var(--text-muted);">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div>© 2026 BIT4. Todos los derechos reservados.</div>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-decoration-none" style="color: var(--text-muted);">Inicio</a>
+        <a href="#" class="text-decoration-none" style="color: var(--text-muted);">Catalogo</a>
+        <a href="#" class="text-decoration-none" style="color: var(--text-muted);">Nosotros</a>
+        <a href="#" class="text-decoration-none" style="color: var(--text-muted);">Contacto</a>
+      </div>
+      <div>
+        <i class="bi bi-clock me-1"></i> Lun - Vie: 9:00 a.m. - 7:00 p.m.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
