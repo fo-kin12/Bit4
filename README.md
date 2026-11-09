@@ -20,20 +20,20 @@ Este proyecto web está diseñado para exhibir grandes clásicos de la historia 
 ## 🛠️ Tecnologías Utilizadas
 
 El proyecto está desarrollado con un enfoque ligero, rápido y sin dependencias pesadas de backend para esta primera versión:
-* **HTML5** (Estructura semántica).
-* **Bootstrap 5.3** (Diseño responsivo, grillas y componentes).
-* **CSS3 Custom Properties (`:root`)** (Gestión de paleta de colores oscura y efectos neón).
-* **JavaScript (Vanilla)** (Lógica del temporizador interactivo en tiempo real para preventas).
+- **HTML5** (Estructura semántica).
+- **Bootstrap 5.3** (Diseño responsivo, grillas y componentes).
+- **CSS3 Custom Properties (`:root`)** (Gestión de paleta de colores oscura y efectos neón).
+- **JavaScript (Vanilla)** (Lógica del temporizador interactivo en tiempo real para preventas y validación de formularios).
 
 ---
 
 ## 🎨 Paleta de Colores y Estética
 
 El diseño implementa un modo oscuro (*Dark Mode*) con iluminación y gradientes inspirados en la atmósfera nocturna de los clubes de jazz y rock:
-* **Fondo Principal (`--bg-primary`):** `#060b1e` (Azul medianoche profundo)
-* **Tarjetas y Contenedores (`--bg-card`):** `#0e1738` (Azul marino)
-* **Acentos Neón (`--accent-cyan`):** `#00d2ff` (Brillo tecnológico y branding)
-* **Gradiente Activo (`--active-gradient`):** Gradiente dinámico de Violeta (`#7b2cbf`) a Cyan (`#00d2ff`)
+- **Fondo Principal (`--bg-primary`):** `#060b1e` (Azul medianoche profundo)
+- **Tarjetas y Contenedores (`--bg-card`):** `#0e1738` (Azul marino)
+- **Acentos Neón (`--accent-cyan`):** `#00d2ff` (Brillo tecnológico y branding)
+- **Gradiente Activo (`--active-gradient`):** Gradiente dinámico de Violeta (`#7b2cbf`) a Cyan (`#00d2ff`)
 
 ---
 
@@ -41,15 +41,15 @@ El diseño implementa un modo oscuro (*Dark Mode*) con iluminación y gradientes
 
 ```text
 BIT4/
-├── index.html              # Página principal original
+├── index.html              # Página principal / Landing o inicio del sitio
 ├── catalogo.html           # Vista principal del catálogo de vinilos
-├── style.css               # Estilos principales corporativos
+├── style.css               # Estilos principales corporativos y variables (:root)
 ├── README.md               # Documentación oficial del proyecto
 ├── Rthriller.jpg           # Recurso de preventa o destacado
-├── pg/                     # [NUEVO] Carpeta desorganizada creada por el equipo
-│   ├── pagDiscos.html      # Página de discos añadida recientemente
-│   └── css/                # Subcarpeta de estilos innecesaria
-│       └── style.css       # Estilos específicos de esa vista
+├── pg/                     # Módulo complementario integrado por el equipo
+│   ├── pagDiscos.html      # Vista secundaria de discos / preventas
+│   └── css/                
+│       └── style.css       # Estilos específicos de esta vista
 ├── imagenes/               # Carpeta de recursos visuales de las carátulas
 │   ├── Michael_Jackson.png # Portada de Thriller
 │   ├── Back_in_Black.jpg   # Portada de Back In Black
