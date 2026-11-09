@@ -41,16 +41,22 @@ El diseño implementa un modo oscuro (*Dark Mode*) con iluminación y gradientes
 
 ```text
 BIT4/
-├── index.html              # Página principal / Landing o inicio del sitio
+├── index.html              # Página principal original
 ├── catalogo.html           # Vista principal del catálogo de vinilos
-├── style.css               # Estilos personalizados y variables corporativas (:root)
+├── style.css               # Estilos principales corporativos
 ├── README.md               # Documentación oficial del proyecto
-├── Rthriller.jpg           # Imagen o recurso adicional de preventa / destacado
+├── Rthriller.jpg           # Recurso de preventa o destacado
+├── pg/                     # [NUEVO] Carpeta desorganizada creada por el equipo
+│   ├── pagDiscos.html      # Página de discos añadida recientemente
+│   └── css/                # Subcarpeta de estilos innecesaria
+│       └── style.css       # Estilos específicos de esa vista
 ├── imagenes/               # Carpeta de recursos visuales de las carátulas
 │   ├── Michael_Jackson.png # Portada de Thriller
 │   ├── Back_in_Black.jpg   # Portada de Back In Black
 │   ├── dark.jpg            # Portada de The Dark Side of the Moon
-│   └── eagles.jpg          # Portada de Their Greatest Hits (Eagles)
+│   ├── eagles.jpg          # Portada de Their Greatest Hits (Eagles)
+│   ├── nirvana.jpg         # Portada de Nirvana (Nevermind)
+│   └── led_zeppelin.jpg    # Portada de Led Zeppelin
 └── docs/                   # Documentación formal de ingeniería (Docs-as-Code)
     ├── ERS.md              # Especificación de Requisitos de Software (v2.0)
     └── USER_STORIES.md     # Product Backlog e Historias de Usuario
