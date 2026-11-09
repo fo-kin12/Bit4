@@ -1,0 +1,120 @@
+/* Estilos propios de inicio.html
+   (los colores vienen de las variables :root de CSS/style.css) */
+
+.etiqueta-inicio {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--cian);
+}
+
+.titulo-hero {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.texto-degradado {
+  background: linear-gradient(90deg, var(--cian), #b48cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.titulo-seccion {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.cifra {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.btn-secundario {
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ---- vinilo del hero ---- */
+.tocadiscos {
+  padding: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(30, 167, 255, 0.25), transparent 70%);
+}
+
+.vinilo-hero {
+  width: min(340px, 75vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #0b0f24 0 6%, transparent 6.5%),
+    repeating-radial-gradient(circle, rgba(255,255,255,0.07) 0 2px, transparent 2px 6px),
+    url("../Rthriller.jpg") center / cover no-repeat;
+  box-shadow: 0 0 60px rgba(30, 167, 255, 0.35);
+  animation: girar 8s linear infinite;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
+
+/* ---- tarjetas de destacados ---- */
+.tarjeta-disco {
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.tarjeta-disco img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.tarjeta-disco:hover {
+  color: white;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(30, 167, 255, 0.3);
+}
+
+.precio {
+  font-weight: 700;
+  color: var(--cian);
+}
+
+.enlace-ver-todo {
+  color: var(--cian);
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.enlace-ver-todo:hover {
+  color: white;
+}
+
+/* ---- banner de preventa ---- */
+.banner-preventa {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, var(--azul-oscuro), var(--morado));
+}
+
+.icono-beneficio {
+  font-size: 2rem;
+  color: var(--cian);
+}
+
+/* respeta a quien prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .vinilo-hero { animation: none; }
+}
+
+/* fondo continuo aunque la página sea larga */
+html { background-color: #14235e; }

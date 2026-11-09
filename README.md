@@ -41,7 +41,8 @@ El diseño implementa un modo oscuro (*Dark Mode*) con iluminación y gradientes
 
 ```text
 BIT4/
-├── index.html              # Página principal / Landing o inicio del sitio
+├── inicio.html             # Página de inicio del sitio (abre esta primero)
+├── index.html              # Preventa con cuenta regresiva
 ├── catalogo.html           # Vista principal del catálogo de vinilos
 ├── style.css               # Estilos principales corporativos y variables (:root)
 ├── README.md               # Documentación oficial del proyecto
@@ -49,7 +50,8 @@ BIT4/
 ├── Pg/                     # Módulo complementario integrado por el equipo
 │   └── pagDisco.html       # Vista secundaria de discos / preventas
 ├── CSS/
-│   └── style.css           # Estilos específicos de Pg/pagDisco.html
+│   ├── style.css           # Estilos compartidos (glass, logo, footer)
+│   └── inicio.css          # Estilos de inicio.html
 ├── imagenes/               # Carpeta de recursos visuales de las carátulas
 │   ├── Michael_Jackson.png # Portada de Thriller
 │   ├── Back_in_Black.jpg   # Portada de Back In Black
