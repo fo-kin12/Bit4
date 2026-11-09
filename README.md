@@ -29,7 +29,7 @@ El proyecto implementa un diseño *Dark Mode* con efectos de iluminación y grad
 
 ```text
 /
-├── index.html           # Vista principal del catálogo
+├── catalogo.html           # Vista principal del catálogo
 ├── README.md            # Documentación oficial del proyecto
 └── imagenes/            # Carpeta de recursos visuales
     ├── Michael_Jackson.png  # Portada Thriller
