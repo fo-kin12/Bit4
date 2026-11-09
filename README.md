@@ -46,17 +46,17 @@ BIT4/
 ├── style.css               # Estilos principales corporativos y variables (:root)
 ├── README.md               # Documentación oficial del proyecto
 ├── Rthriller.jpg           # Recurso de preventa o destacado
-├── pg/                     # Módulo complementario integrado por el equipo
-│   ├── pagDiscos.html      # Vista secundaria de discos / preventas
-│   └── css/                
-│       └── style.css       # Estilos específicos de esta vista
+├── Pg/                     # Módulo complementario integrado por el equipo
+│   └── pagDisco.html       # Vista secundaria de discos / preventas
+├── CSS/
+│   └── style.css           # Estilos específicos de Pg/pagDisco.html
 ├── imagenes/               # Carpeta de recursos visuales de las carátulas
 │   ├── Michael_Jackson.png # Portada de Thriller
 │   ├── Back_in_Black.jpg   # Portada de Back In Black
 │   ├── dark.jpg            # Portada de The Dark Side of the Moon
 │   ├── eagles.jpg          # Portada de Their Greatest Hits (Eagles)
-│   ├── nirvana.jpg         # Portada de Nirvana (Nevermind)
-│   └── led_zeppelin.jpg    # Portada de Led Zeppelin
-└── docs/                   # Documentación formal de ingeniería (Docs-as-Code)
+│   ├── nevermind.jpg       # Portada de Nirvana (Nevermind)
+│   └── zeppelin.jpg        # Portada de Led Zeppelin
+└── Docs/                   # Documentación formal de ingeniería (Docs-as-Code)
     ├── ERS.md              # Especificación de Requisitos de Software (v2.0)
     └── USER_STORIES.md     # Product Backlog e Historias de Usuario
