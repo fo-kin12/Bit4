@@ -35,4 +35,7 @@ El proyecto implementa un diseño *Dark Mode* con efectos de iluminación y grad
     ├── Michael_Jackson.png  # Portada Thriller
     ├── Back_in_Black.jpg    # Portada Back In Black
     ├── dark.jpg             # Portada The Dark Side of the Moon
-    └── eagles.jpg           # Portada Their Greatest Hits (Eagles)
+    ├── eagles.jpg           # Portada Their Greatest Hits (Eagles)
+    ├── nirvana.jpg         # Portada de Nirvana (Nevermind) [NUEVO]
+│   └── led_zeppelin.jpg    # Portada de Led Zeppelin [NUEVO]
+
