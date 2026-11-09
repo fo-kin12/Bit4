@@ -70,8 +70,9 @@
                         <p class="mb-0 texto-gris">Recibe alertas de preventas, ediciones limitadas y reposiciones de tus artistas favoritos.</p>
                     </div>
                     <div class="col-12 col-lg-5">
-                        <form class="d-flex gap-2" data-bs-theme="dark">
-                            <input type="email" class="form-control" placeholder="tu@correo.com">
+                        <form class="d-flex gap-2" data-bs-theme="dark"
+                         onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+                            <input type="email" class="form-control" placeholder="tu@correo.com" required>
                             <button type="submit" class="btn btn-ingresar">SUSCRIBIRME</button>
                         </form>
                     </div>
