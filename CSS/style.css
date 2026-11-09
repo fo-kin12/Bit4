@@ -1,0 +1,80 @@
+:root {
+    --azul-oscuro: #14235e;
+    --morado: #5b3fa8;
+    --cian: #1ea7ff;
+    --cian-hover: #0d8be0;
+    --texto-gris: #b8c0e0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(150deg, var(--azul-oscuro) 50%, var(--morado) 130%); 
+  background-attachment: fixed;
+}
+
+.logo-punto {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    border: 4px solid var(--cian);
+}
+
+.logo-texto {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid var(--cian);
+}
+
+.btn-ingresar {
+    background-color: var(--cian);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.btn-ingresar:hover {
+    background-color: var(--cian-hover);
+    color: white;
+}
+
+.badge-carrito {
+    background-color: var(--cian);
+}
+
+.texto-gris {
+    color: var(--texto-gris);
+}
+
+.form-control {
+    background-color: var(--azul-oscuro);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+}
+
+.titulo-footer {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.enlace-footer {
+    color: var(--texto-gris);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.enlace-footer:hover {
+    color: white;
+}
